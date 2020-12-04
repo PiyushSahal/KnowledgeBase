@@ -1,6 +1,6 @@
 # KnowledgeBase 
-
-The idea behind this knowledge base is to provide users basic knowledge of the products like Yammer, SharePoint , OneDrive, Power Apps and Streams
+This knowledge base is a collection of documentation that typically includes answers to frequently asked questions, how-to guides, and troubleshooting instructions. Its purpose is to make it easy for people to find solutions to their problems without having to ask for help.
+The idea behind this knowledge base is to provide users basic knowledge of the products like Yammer, SharePoint , OneDrive, Power Apps and Streams.
 
 This is to help the users with basic inputs on how to use all the apps hosted in O365 environments. 
 
