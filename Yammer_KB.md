@@ -22,8 +22,8 @@ You can create a new group and customize it for your members.
 Your group is now active and appears in your network’s group list. 
 
 __How to Create Different Types of Posts?__  
-Start a conversation in Yammer to share information and updates across your organization. 
-Post an update 
+Start a conversation in Yammer to share information and updates across your organization.   
+*Post an update* 
 1. Select Update and type a message. 
 2. @mention people who'll find the post helpful or interesting. Or, use a hashtag on topics relevant to the message so others discover it. 
 3. Upload videos, photos, and documents to your post for 
