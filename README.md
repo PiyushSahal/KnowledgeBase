@@ -1,4 +1,4 @@
-# KnowledgeBase 
+# Knowledge Base 
 This knowledge base is a collection of documentation that typically includes answers to frequently asked questions, how-to guides, and troubleshooting instructions. Its purpose is to make it easy for people to find solutions to their problems without having to ask for help.
 The idea behind this knowledge base is to provide users basic knowledge of the products like Yammer, SharePoint , OneDrive, Power Apps and Streams.
 
