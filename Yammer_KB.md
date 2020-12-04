@@ -55,7 +55,8 @@ If you need to create a new file in Word, PowerPoint, or Excel, you can add one 
 *Create a file*  
 From your Yammer home page: 
 1. Select Create a File. 
-2. Select the drop-down arrow and select the file type you want. 3. Type in a file name and select Create. 
+2. Select the drop-down arrow and select the file type you want. 
+3. Type in a file name and select Create. 
 
 The new file opens in another tab and appears in a Files list that all group members can access. 
 
