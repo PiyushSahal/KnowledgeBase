@@ -78,7 +78,7 @@ __How to Discover & Search in Yammer?__
 3. The All tab shows all conversations you can access on your organization’s network. 
 4. The Following tab These are the conversations you actively subscribe to, including conversations that your followers have participated in or liked and conversations that have been tagged with a topic you follow. 
 
-To view your groups' conversations, use the left navigation and go directly to the group to see new conversations in your groups. When you're all caught up, click the group-to-group transition link at the bottom of your feed to go to your next groups' new conversations. 
+To view your groups' conversations, use the left navigation and go directly to the group to see new conversations in your groups. When you're all caught up, click the group-to-group transition link at the bottom of your feed to go to your next groups' new conversations.  
 *Search for answers*  
 1. In the left side rail, in the Search bar, type in related keywords to find what you need. As you type, a list of categorized results is displayed with suggested people, groups, files, topics, and links. 
 2. If you don’t see what you’re looking for, search See All Search Results. 
