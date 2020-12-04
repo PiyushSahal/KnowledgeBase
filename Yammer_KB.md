@@ -22,7 +22,7 @@ You can create a new group and customize it for your members.
 Your group is now active and appears in your network’s group list. 
 
 __How to Create Different Types of Posts?__  
-Start a conversation in Yammer to share information and updates across your organization.   
+Start a conversation in Yammer to share information and updates across your organization.     
 *Post an update* 
 1. Select Update and type a message. 
 2. @mention people who'll find the post helpful or interesting. Or, use a hashtag on topics relevant to the message so others discover it. 
@@ -71,7 +71,7 @@ From the Files list in your Yammer group:
 5. Type a message to give context or information for your file. 
 6. Select Send. 
 
-__How to Discover & Search in Yammer?__ 
+__How to Discover & Search in Yammer?__  
 *Discover conversations*  
 1. Select Yammer from the home tab on the left rail. 
 2. The Discovery tab suggests conversations relevant to you based on what you subscribe to and interact with on your Yammer network. 
