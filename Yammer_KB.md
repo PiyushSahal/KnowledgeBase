@@ -1,4 +1,4 @@
-__How to Access & Sign in In Yammer?__  
+__How to Access & Sign in to Yammer?__  
 Sign in at Yammer.com, select Log in, and enter your company email and password. Or, from anywhere in office.com, select the app launcher (waffle) in the upper-left corner, and select Yammer (you may need to choose “All apps” first). 
 
 __How to Join Groups in Yammer?__  
