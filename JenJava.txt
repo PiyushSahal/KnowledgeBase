@@ -1,4 +1,30 @@
-<a href="https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1"    onClick="createNewDocumentWithProgID  
-('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists .xltx',    
-'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1','SharePoint.OpenDocuments', false)">Click here to create a Checklist Document</a> 
-<p>&#160;</p>
+<a href="#" onclick="downloadFile()">Click here to create a Checklist Document</a>
+
+<script>
+function downloadFile() {
+  var templateURL = 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx';
+  var folderURL = 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1';
+  
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', templateURL, true);
+  xhr.responseType = 'blob';
+  xhr.onload = function() {
+    if (this.status === 200) {
+      var blob = this.response;
+      var filename = 'NAIOOClientServiceTeamChecklists.xltx';
+      if (window.navigator.msSaveOrOpenBlob) {
+        // For Internet Explorer
+        window.navigator.msSaveOrOpenBlob(blob, filename);
+      } else {
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    }
+  };
+  xhr.send();
+}
+</script>
