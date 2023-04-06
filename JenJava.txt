@@ -1,8 +1,9 @@
-<a href="#" onclick="createNewDocument('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx')">Click here to create a Checklist Document</a>
+<a href="#" onClick="createNewDocument('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx', 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1')">Click here to create a Checklist Document</a>
+<p>&#160;</p>
 
 <script type="text/javascript">
-function createNewDocument(url) {
-    var win = window.open(url, '_blank');
-    win.focus();
+function createNewDocument(templateUrl, siteUrl) {
+    var documentUrl = siteUrl + '/_layouts/15/download.aspx?SourceUrl=' + templateUrl;
+    window.open(documentUrl, '_blank');
 }
 </script>
