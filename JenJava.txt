@@ -1,31 +1,8 @@
-function createDocument() {
-  var webUrl = "https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/";
-  var folderUrl = "Checklist1";
-  var templateFileUrl = "/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx";
+<a href="#" onclick="createNewDocument('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx')">Click here to create a Checklist Document</a>
 
-  var url = webUrl + "/_api/web/getfolderbyserverrelativeurl('" + folderUrl + "')/files/add(url='NewChecklist.xlsx',overwrite=true)";
-  var headers = {
-    "accept": "application/json;odata=verbose",
-    "X-RequestDigest": $("#__REQUESTDIGEST").val(),
-  };
-  var data = {
-    '__metadata': {
-      'type': 'SP.File'
-    },
-    'TemplateUrl': templateFileUrl
-  };
-
-  $.ajax({
-    url: url,
-    type: "POST",
-    headers: headers,
-    contentType: "application/json;odata=verbose",
-    data: JSON.stringify(data),
-    success: function(data) {
-      console.log("Document created successfully");
-    },
-    error: function(error) {
-      console.log(JSON.stringify(error));
-    }
-  });
+<script type="text/javascript">
+function createNewDocument(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
 }
+</script>
