@@ -1,9 +1,14 @@
-<a href="#" onClick="createNewDocument('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx', 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1')">Click here to create a Checklist Document</a>
-<p>&#160;</p>
+<a href="#" id="create-checklist-link">Click here to create a Checklist Document</a>
 
-<script type="text/javascript">
-function createNewDocument(templateUrl, siteUrl) {
-    var documentUrl = siteUrl + '/_layouts/15/download.aspx?SourceUrl=' + templateUrl;
-    window.open(documentUrl, '_blank');
-}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#create-checklist-link").on("click", function(event) {
+    event.preventDefault();
+    var templateURL = "https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx";
+    var folderURL = "https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1";
+    var createNewItemURL = folderURL + "/Forms/Document.aspx?Template=" + templateURL;
+    window.location.href = createNewItemURL;
+  });
+});
 </script>
