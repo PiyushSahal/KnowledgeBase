@@ -1,30 +1,31 @@
-<a href="#" onclick="downloadFile()">Click here to create a Checklist Document</a>
+function createDocument() {
+  var webUrl = "https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/";
+  var folderUrl = "Checklist1";
+  var templateFileUrl = "/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx";
 
-<script>
-function downloadFile() {
-  var templateURL = 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists.xltx';
-  var folderURL = 'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1';
-  
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', templateURL, true);
-  xhr.responseType = 'blob';
-  xhr.onload = function() {
-    if (this.status === 200) {
-      var blob = this.response;
-      var filename = 'NAIOOClientServiceTeamChecklists.xltx';
-      if (window.navigator.msSaveOrOpenBlob) {
-        // For Internet Explorer
-        window.navigator.msSaveOrOpenBlob(blob, filename);
-      } else {
-        var link = document.createElement('a');
-        link.href = window.URL.createObjectURL(blob);
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-    }
+  var url = webUrl + "/_api/web/getfolderbyserverrelativeurl('" + folderUrl + "')/files/add(url='NewChecklist.xlsx',overwrite=true)";
+  var headers = {
+    "accept": "application/json;odata=verbose",
+    "X-RequestDigest": $("#__REQUESTDIGEST").val(),
   };
-  xhr.send();
+  var data = {
+    '__metadata': {
+      'type': 'SP.File'
+    },
+    'TemplateUrl': templateFileUrl
+  };
+
+  $.ajax({
+    url: url,
+    type: "POST",
+    headers: headers,
+    contentType: "application/json;odata=verbose",
+    data: JSON.stringify(data),
+    success: function(data) {
+      console.log("Document created successfully");
+    },
+    error: function(error) {
+      console.log(JSON.stringify(error));
+    }
+  });
 }
-</script>
