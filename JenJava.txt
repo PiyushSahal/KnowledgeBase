@@ -1,0 +1,4 @@
+<a href="https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1"    onClick="createNewDocumentWithProgID  
+('https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1/Forms/Checklist/NAIOOClientServiceTeamChecklists .xltx',    
+'https://sp2019.ntrs.com/sites/GFSMiddleOfficeNASharepointSite/BP1/Checklist1','SharePoint.OpenDocuments', false)">Click here to create a Checklist Document</a> 
+<p>&#160;</p>
